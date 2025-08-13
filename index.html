@@ -11,7 +11,7 @@
 
 <body>
     <!--Responsive Navbar-->
-    <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0">
+    <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -24,18 +24,18 @@
                 <a href="#" class="hover:underline hover:text-black">Home</a>
             </li>
             <li>
-                <a href="#" class="hover:underline hover:text-black">Products</a>
+                <a href="products.html" class="hover:underline hover:text-black">Products</a>
             </li>
             <li>
-                <a href="#" class="hover:underline hover:text-black">Contact</a>
+                <a href="contact.html" class="hover:underline hover:text-black">Contact</a>
             </li>
         </ul>
     </nav>
     <!--Header Section-->
-    <section class="bg-green-100 p-4 flex justify-center">
+    <section class="bg-green-100 p-4 md:p-10 flex justify-center">
         <div>
             <p class="mb-3">We offer you a wild range of Artificial and Natural Flowers</p>
-            <P class="font-bold text-3xl mb-4">Plants for your Interior</P>
+            <P class="font-bold text-3xl md:text-5xl mb-4">Plants for your Interior</P>
             <div>
                 <button class="bg-black text-white p-2 rounded">Shop Now</button>
                 <button class="border border-black p-2">Watch Video</button>
@@ -59,11 +59,7 @@
                 </svg>
 
                 <h2 class="text-xl font-medium">Large Assortment</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quos deserunt vero numquam accusantium
-                    illum
-                    sapiente maiores voluptates at velit, non cum excepturi est, reprehenderit, itaque consequatur
-                    corporis
-                    esse eaque.</p>
+                <p>Discover a diverse world of greenery with our extensive plant assortment. Our carefully curated collection includes everything from easy-to-care-for succulents and air-purifying indoor plants to stunning flowering varieties and robust outdoor shrubs.</p>
             </div>
             <div class="border border-black p-2 m-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -73,11 +69,7 @@
                 </svg>
 
                 <h2 class="text-xl font-medium">Free and Fast Shipping</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quos deserunt vero numquam accusantium
-                    illum
-                    sapiente maiores voluptates at velit, non cum excepturi est, reprehenderit, itaque consequatur
-                    corporis
-                    esse eaque.</p>
+                <p>Our commitment to your satisfaction includes reliable shipping. We provide free and fast shipping on all orders, ensuring your plants arrive fresh and in perfect condition. Expect your package to be delivered within 3-5 business days from the time you place your order.</p>
             </div>
             <div class="border border-black p-2 m-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -86,17 +78,71 @@
                         d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
                 </svg>
 
- 
+
                 <h2 class="text-xl font-medium">24/7 Support</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quos deserunt vero numquam accusantium
-                    illum
-                    sapiente maiores voluptates at velit, non cum excepturi est, reprehenderit, itaque consequatur
-                    corporis
-                    esse eaque.</p>
+                <p>We are committed to providing you with an excellent experience from start to finish. That's why our dedicated team offers 24/7 support to assist you with any questions or concerns. You can reach us at any time via live chat or email, and we'll get back to you as quickly as possible.</p>
             </div>
         </div>
+    </section>
+    <!--Best Seller-->
+    <section class="text-center p-4">
+        <h2 class="font-bold text-3xl mt-5">Best Seller</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-3">
+            <div>
+                <img src="./images/Bestseller_1.jpg" alt="image1" class="inline hover:shadow-xl transform hover:translate-y-2">
+                <p class="pt-3">Rose Plant</p>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Bestseller_2.jpg" alt="image1" class="inline hover:shadow-xl transform hover:translate-y-2">
+                <p class="pt-3">Rose Plant</p>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Bestseller_3.jpg" alt="image1" class="inline hover:shadow-xl transform hover:translate-y-2">
+                <p class="pt-3">Rose Plant</p>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Bestseller_4.jpg" alt="image1" class="inline hover:shadow-xl transform hover:translate-y-2">
+                <p class="pt-3">Rose Plant</p>
+                <p>$20</p>
+            </div>
+        </div>
+    </section>
+    <!--Customer Reviews-->
+    <section>
+        <h2 class="font-bold text-3xl mt-5 text-center">Customer Reviews</h2>
+        <div class="p-5 flex  justify-center flex-col  ">
+            <div class="bg-green-800 p-5 mt-5">
+                <p class="text-white">We're so proud of the beautiful plants we provide and the happy homes they go to. Read through our customer reviews to see why so many people trust us with their plant needs and gardening dreams.</p>
+                <p class="text-yellow-500">Genney Mathew</p>
+            </div>
+            <div class="bg-green-800 p-5 mt-5">
+                <p class="text-white">"I ordered a large succulent and it arrived in perfect condition. The packaging was amazing, and the plant looks so healthy. Free and fast shipping made it even better!"</p>
+                <p class="text-yellow-500">Jim</p>
+            </div>
+            <div class="bg-green-800 p-5 mt-5">
+                <p class="text-white">"The assortment of plants is fantastic. My order arrived quickly, though one leaf was a little bent. Overall, I'm very happy with my purchase and will be ordering more!"</p>
+                <p class="text-yellow-500">Parker</p>
+            </div>
+        </div>
+    </section>
 
+    <!--News Letter-->
+    <section class="text-center">
+        <p class="font-bold text-3xl mt-3 text-center">Join our News Letter</p>
+        <p class="pt-2">Signup for our email newspaper to get exclusive discounts,updates and more</p>
+        <input type="text" class="border border-black p-2 m-3" style="width: 80%;">
+        <br/>
+        <button class="border border-black m-1 p-3 text-white bg-black underline">Subscribe</button>
+    </section>
+
+    <!--Footer-->
+    <section class="p-6 bg-green-200 mt-5">
+        <h1 class="font-bold text-3xl">Greenden</h1>
+        <p class="pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="pt-4">@ 2025 Greenday.com</p>
     </section>
 </body>
-
 </html>
